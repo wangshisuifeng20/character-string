@@ -1,0 +1,16 @@
+7.编写一个Python程序，从给定的字符串中查找子字符串'not'和'poor'的首次出现，
+如果'not'跟在'poor'之后，则将整个'not'...'poor'子字符串替换为'好'。返回结果字符串。
+Sample String : 'The lyrics is not that poor!'
+'The lyrics is good!'
+Expected Result : 'The lyrics is poor!'
+'The lyrics is poor!'
+
+def haha(str):
+    n1 = str.find('not');
+    n2 = str.find('poor');
+    if n2 > n1 and n1 > 0 and n2 > 0:
+        str = str.replace(str[n1:n2+4],'good');
+        return str;
+    else:
+        return str;
+print(haha('The lyrics is not that poor!'))

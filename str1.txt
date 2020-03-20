@@ -1,0 +1,5 @@
+1.编写一个Python程序来计算字符串的长度
+
+def string_1(str):
+    return len(str);
+print(string_1('going'))

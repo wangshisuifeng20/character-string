@@ -1,0 +1,11 @@
+5.编写一个Python程序，从两个给定的字符串中获取一个字符串，并用空格隔开，
+然后交换每个字符串的前两个字符。转到编辑器 
+样本字符串：'abc'，'xyz' 
+预期结果：'xyc abz' 
+
+def chars_mix_up(a, b):
+  new_a = b[:2] + a[2:]
+  new_b = a[:2] + b[2:]
+
+  return new_a + ' ' + new_b
+print(chars_mix_up('abc', 'xyz'))

@@ -1,0 +1,7 @@
+10.编写一个Python程序，将给定的字符串更改为新的字符串，
+其中第一个和最后一个字符已被交换。
+
+
+def exchange(str):
+    return str[-1] + str[1:-1] + str[0]
+print(exchange('yuansiy'))

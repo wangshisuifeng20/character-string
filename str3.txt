@@ -1,0 +1,14 @@
+3.编写一个Python程序，从给定的字符串中获取由前2个字符和后2个字符组成的字符串。
+如果字符串长度小于2，则返回而不是空字符串。
+
+
+def key_in(str):
+    n = len(str);
+    if n < 2:
+        return "空字符串";
+    else:
+        str = str[:2] + str[-2:]
+        return str;
+print(key_in('w3resource'));
+print(key_in('w3'))
+print(key_in('w'))

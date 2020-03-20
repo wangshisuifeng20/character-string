@@ -1,0 +1,10 @@
+9.编写Python程序以从非空字符串中删除第n个索引字符。
+
+def hehe(str,n):
+    if str == ' ':
+        return False;
+    else:
+        str = str[0:n] + str[n+1:];
+        return str;
+print(hehe('siyuyuan',5))
+print(hehe('chaoyang',4))

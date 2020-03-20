@@ -1,0 +1,20 @@
+6.编写一个Python程序，在给定字符串的末尾添加“ ing”（长度至少应为3）。
+如果给定的字符串已经以“ ing”结尾，则添加“ ly”。如果给定字符串的字符串长度小于3，则保持不变。
+样本字符串：'abc' 
+预期结果：'abcing' 
+样本字符串：'string' 
+预期结果：'stringly'
+
+
+def keys_(str):
+    if len(str) < 3:
+        return str;
+    elif str[-3:] == 'ing':
+        str = str[0:] + 'ly';
+        return str;
+    else:
+        str = str[0:] + 'ing';
+        return str;
+print(keys_('abc' ))
+print(keys_('string'  ))
+print(keys_('ab' ))
