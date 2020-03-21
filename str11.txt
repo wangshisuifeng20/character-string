@@ -1,0 +1,10 @@
+11.编写一个Python程序，以删除具有给定字符串的奇数索引值的字符。
+
+def hehe(str):
+    result = ""
+    for i in range(len(str)):
+        if i % 2 == 0: 
+            result = result + str[i];
+    return result;
+print(hehe('hhh'))
+print(hehe('chaoyang'))

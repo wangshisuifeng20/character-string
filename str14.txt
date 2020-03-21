@@ -1,0 +1,7 @@
+14.编写一个Python程序，该程序接受逗号分隔的单词序列作为输入，并以排序形式（字母数字）打印唯一的单词。转到编辑器
+示例词：red, black, pink, green
+预期结果：black, green, pink, red
+
+items = input("Input comma separated sequence of words：")
+words = [word for word in items.split(",")]
+print(",".join(sorted(list(set(words)))))

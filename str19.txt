@@ -1,0 +1,7 @@
+19.编写一个Python程序，以获取指定字符之前的字符串的最后一部分。
+https://www.w3resource.com/python-exercises 
+https://www.w3resource.com/python
+
+str1 = 'https://www.w3resource.com/python-exercises/string'
+print(str1.rsplit('/', 1)[0])
+print(str1.rsplit('-', 1)[0])

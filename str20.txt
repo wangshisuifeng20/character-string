@@ -1,0 +1,10 @@
+20.如果长度是4的倍数，则编写一个Python函数来反转字符串。
+
+def reverse_(str):
+    if len(str) % 4 == 0:
+        str1 = str[::-1];
+        return str1;
+    else:
+        return str;
+print(reverse_('4567'))
+print(reverse_('45678'))

@@ -1,0 +1,10 @@
+15.编写Python函数来创建HTML字符串，并在单词周围带有标签。
+
+示例函数和结果：
+add_tags（'i'，'Python'）->'<i> Python </ i>' 
+add_tags（'b'，'Python Tutorial'）->'<b> Python教程</ b>' 
+
+def add_tags(str1,str2):
+    a =('<{}>{}<\{}>'.format(str1,str2,str1));
+    return a;
+print(add_tags('h1','python'));

@@ -1,0 +1,12 @@
+12.编写一个Python程序来计算给定句子中每个单词的出现次数。
+
+def countplus(str):
+    dict = {}
+    words = str.split()
+    for word in words:
+        if word in dict:
+            dict[word] += 1;
+        else:
+            dict[word] = 1;
+    return dict;
+print( countplus('the quick brown fox jumps over the lazy dog.'))

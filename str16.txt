@@ -1,0 +1,11 @@
+16.编写Python函数以在字符串中间插入一个字符串。
+示例函数和结果：
+insert_sting_middle（'[[]] << >>'，'Python'）-> [[Python]] 
+insert_sting_middle（'{{}}'，'PHP'）-> {{ PHP}} 
+
+def insert_sting_middle(str, word):
+	return str[:2] + word + str[2:]
+
+print(insert_sting_middle('[[]]', 'Python'))
+print(insert_sting_middle('{{}}', 'PHP'))
+print(insert_sting_middle('<<>>', 'HTML'))

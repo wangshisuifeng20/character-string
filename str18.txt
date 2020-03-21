@@ -1,0 +1,12 @@
+18.编写Python函数以获取由指定字符串的前三个字符组成的字符串。如果字符串的长度小于3，则返回原始字符串。
+示例函数和结果：
+first_three（'ipy'）-> 
+ipy first_three（'python'）-> pyt
+
+def first_three(str):
+    if len(str) < 3:
+        return str;
+    else:
+        return str[:3];
+print(first_three('ipy'))
+print(first_three('python'))

@@ -1,0 +1,15 @@
+17.编写Python函数以获取由指定字符串的最后两个字符的4个副本组成的字符串（长度必须至少为2）。
+示例函数和结果：
+insert_end（'Python'）-> onononon 
+insert_end（'Exercises'）-> eseseses
+
+
+def insert_end(str,n):
+    if len(str) > 2:
+        result = ""
+        for i in range(n):
+            result += str[-2:]
+        return result
+    else:
+        return false
+print(insert_end('Python',10))
