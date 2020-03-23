@@ -1,0 +1,7 @@
+23.编写一个Python程序以删除Python中的换行符。
+
+def del_(str):
+    if '\n' in str:
+        str.replace('\n',' ')
+    return str
+print(del_('\n\nplplp'))

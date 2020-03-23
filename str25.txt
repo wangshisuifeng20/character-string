@@ -1,0 +1,14 @@
+25.编写一个Python程序来创建Caesar加密。
+
+注意：在密码术中，凯撒密码，也称为凯撒密码，移位密码，凯撒编码或凯撒移位，是最简单和最广为人知的加密技术之一。
+这是一种替换密码，其中明文中的每个字母都由一个字母固定下来，位于字母表下方一定数量的位置。
+例如，左移3时，D将被A替换，E将变为B，依此类推。
+该方法以尤利乌斯·凯撒（Julius Caesar）命名，他在私人通讯中使用了该方法。
+
+
+def Caesar(str,n):
+    str1 = ""
+    for character in str:
+        str1 += chr(ord(character) - n)
+    return str1
+print(Caesar('abs',1))

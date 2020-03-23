@@ -1,0 +1,4 @@
+24.编写一个Python程序来检查字符串是否以指定的字符开头。
+
+string = "w3resource.com"
+print(string.startswith("w3r"))

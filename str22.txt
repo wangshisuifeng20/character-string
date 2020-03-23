@@ -1,0 +1,6 @@
+22.编写一个Python程序，以字典方式对字符串进行排序。
+
+def lexicographi_sort(s):
+    return sorted(s, key=str.upper)
+print(lexicographi_sort('w3resource'))
+print(lexicographi_sort('quickbrown'))

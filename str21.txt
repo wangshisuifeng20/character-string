@@ -1,0 +1,17 @@
+21.如果在给定的字符串的前4个字符中至少包含2个大写字符，
+则编写Python函数将给定的字符串转换为全部大写。
+
+def upper_(str):
+    words = str[:4]
+    count = 0
+    for word in words:
+        if word.isupper():
+            count += 1;
+    if count >= 2:
+        words1 = words.upper();
+        return words1 + str[4:]
+    else:
+        return str
+print(upper_('ABcdef'))
+print(upper_('Asdfwe'))
+print(upper_('SDFkLO'))
