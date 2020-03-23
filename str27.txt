@@ -1,0 +1,17 @@
+27.编写一个Python程序，以从给定文本的所有行中删除现有的缩进。
+单击我查看示例解决方案
+
+import textwrap
+
+sample_text="""
+  Failure is probably the fortification in your pole.
+ It is like a peek your wallet as the thief,
+ when you are thinking how to spend several hard-won lepta,
+ when you are wondering whether new money, it has laid background.
+  Because of you, then at the heart of the most lax,
+ alert, and most low awareness, and left it godsend failed.
+"""
+
+
+print("depent:\n")
+print(textwrap.dedent(sample_text))

@@ -1,0 +1,8 @@
+30.编写一个Python程序，以打印以下最多2个小数位的浮点数。
+
+x = 3.15454
+y = 2.999999
+print('original number:',x)
+print('numberhou:'+"{:.2f}".format(x))
+print('original number:',y)
+print('numberhou:'+'{:.2f}'.format(y))
