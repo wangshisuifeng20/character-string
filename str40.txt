@@ -1,0 +1,7 @@
+40.编写一个Python程序来反转字符串中的单词。
+
+
+def reversed1(str):
+    for list in str.split('\n'):
+        return(' '.join(list.split()[::-1]))
+print(reversed1('yuan si yu'))

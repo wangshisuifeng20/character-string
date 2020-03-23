@@ -1,0 +1,7 @@
+37.编写一个Python程序，以显示宽度为10的左，右和中心对齐的数字。
+
+y = 23
+print('original number:',y)
+print('left:'+"{:<10d}".format(y))
+print('right:'+'{:10d}'.format(y))
+print('center:'+'{:^10d}'.format(y))

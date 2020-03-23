@@ -1,0 +1,6 @@
+38.编写一个Python程序来计算字符串中子字符串的出现。
+
+str1 = 'The quick brown fox jumps over the lazy dog.'
+print()
+print(str1.count("fox"))
+print()

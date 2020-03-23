@@ -1,0 +1,6 @@
+39.编写一个Python程序来反转字符串。
+
+def reversed(str):
+    str = str[::-1]
+    return str
+print(reversed('yuansiyu'))

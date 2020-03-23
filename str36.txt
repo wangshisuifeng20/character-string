@@ -1,0 +1,8 @@
+36.编写一个Python程序以百分比格式格式化数字
+
+x = 0.3
+y = 0.23
+print('original number:',x)
+print('numberhou:'+"{:.2%}".format(x))
+print('original number:',y)
+print('numberhou:'+'{:.2%}'.format(y))
