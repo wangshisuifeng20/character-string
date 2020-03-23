@@ -1,0 +1,9 @@
+54.编写一个Python程序来查找给定字符串的第一个重复字符，该字符的首次出现索引最小。
+
+def find(str):
+    value = str[0]
+    for i in range(1,len(str)):
+        while str[i] != value:
+            value = str[i]
+        return str[i]
+print(find('w3c34563'))

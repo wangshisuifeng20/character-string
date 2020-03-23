@@ -1,0 +1,11 @@
+55.编写一个Python程序来查找给定字符串中的第一个重复单词。
+
+
+def words(str):
+    list = str.split()
+    value = list[0]
+    for word in list[1:]:
+        while word != value:
+            value = word
+    return value
+print(words('the people value people'))
