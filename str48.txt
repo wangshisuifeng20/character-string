@@ -1,0 +1,9 @@
+48.编写一个Python程序来交换逗号和点中的字符串。
+示例字符串：“ 32.054,23” 
+预期输出：“ 32,054.23”
+
+
+amount = "32.054,23"
+trantab = maketrans(',.','.,')
+amount = amount.translate(trantab)
+print(amount)

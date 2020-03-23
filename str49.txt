@@ -1,0 +1,20 @@
+49.编写一个Python程序来计算和显示给定文本的元音。
+
+def vowel(str):
+    vowels = 'aeiouAEIOU'
+    list = []
+    k = 0
+    for letter in str:
+        if letter in vowels:
+            k += 1
+            list += letter
+    print(k)
+    print(list)
+vowel('w3resource')
+
+
+def vowel(text):
+    vowels = "aeiuoAEIOU"
+    print(len([letter for letter in text if letter in vowels]))
+    print([letter for letter in text if letter in vowels])
+vowel('w3resource');

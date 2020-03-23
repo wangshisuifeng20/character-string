@@ -1,0 +1,8 @@
+47.编写一个Python程序，将字符串中的前n个字符小写
+
+def lower_(str,n):
+    str1 = str[:n]
+    str2 = str1.lower()
+    str = str2 + str[4:]
+    return str
+print(lower_('UIOPjsfg',4))

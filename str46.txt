@@ -1,0 +1,6 @@
+46.编写一个Python程序来转换列表中的字符串
+
+str1 = "The quick brown fox jumps over the lazy dog."
+print(str1.split(' '))
+str1 = "The-quick-brown-fox-jumps-over-the-lazy-dog."
+print(str1.split('-'))
