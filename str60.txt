@@ -1,0 +1,13 @@
+60.编写一个Python程序，将给定字符串的每个单词的首字母和尾字母大写。
+
+
+def capitalize(str1):
+     str1 = str1.title()
+     print(str1)
+     result = ""
+     for word in str1.split():
+        result += word[:-1] + word[-1].upper() + " "
+        print(result)
+     return result[:-1]  
+     
+print(capitalize("python exercises practice solution"))

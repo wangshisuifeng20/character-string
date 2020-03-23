@@ -1,0 +1,8 @@
+56.编写一个Python程序，以查找给定字符串中倒数第二个单词。
+
+
+def fing(str):
+    list = str.split()
+    value = list[-2]
+    return value
+print(fing('the woman is beautiful'))

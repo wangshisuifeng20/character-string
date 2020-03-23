@@ -1,0 +1,9 @@
+57.编写一个Python程序从给定的字符串中删除空格。
+
+
+def remove_spaces(str1):
+  str1 = str1.replace(' ','')
+  return str1
+    
+print(remove_spaces("w 3 res ou r ce"))
+print(remove_spaces("a b c"))
