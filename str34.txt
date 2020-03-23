@@ -1,0 +1,8 @@
+34.编写一个Python程序，在指定宽度的右边打印以下带有'*'的整数
+
+x = 3
+y = 23
+print('original number:',x)
+print('numberhou:'+"{:*<2d}".format(x))
+print('original number:',y)
+print('numberhou:'+'{:*<3d}'.format(y))

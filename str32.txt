@@ -1,0 +1,8 @@
+32.编写一个Python程序来打印以下不带小数位的浮点数
+
+x = 3.15454
+y = 2.999999
+print('original number:',x)
+print('numberhou:'+"{:.0f}".format(x))
+print('original number:',y)
+print('numberhou:'+'{:.0f}'.format(y))

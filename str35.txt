@@ -1,0 +1,8 @@
+35.编写一个Python程序来显示带有逗号分隔符的数字。
+
+x = 3000000
+y = 230000000
+print('original number:',x)
+print('numberhou:'+"{:,}".format(x))
+print('original number:',y)
+print('numberhou:'+'{:,}'.format(y))
