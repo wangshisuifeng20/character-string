@@ -1,0 +1,31 @@
+def a(str):
+    dict={}
+    list = str.split()
+    for i in list:
+        dict[i] = len(i)
+    return (min(y,key=y.get)),(max(y,key=y.get))
+
+print(a("the best way of learning python iss excecise"))
+
+
+
+
+def counthh(str1):
+    list = str1.split()
+    small = large = list[0]
+    for i in range(len(list)):
+        if (len(small) > len(list[i])):
+            small = list[i]
+        if (len(large) < len(list[i])):
+            large = list[i]
+    return small,large
+print(counthh('the best way of learning python iss excecise'))
+
+
+def xixi(list):
+    word_list = [];
+    for n in list:
+        word_list.append((len(n),n));
+        word_list.sort();
+    return word_list[0][1],word_list[-1][1]
+print(xixi(['the', 'best', 'way', 'of', 'learning', 'python', 'iss', 'excecise']))

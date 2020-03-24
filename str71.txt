@@ -1,0 +1,9 @@
+71.编写一个Python程序，以单次遍历将所有空格移动到给定字符串的开头。
+
+def move(str):
+    char = [ch for ch in str if ch != ' ']
+    pace = len(str) - len(char)
+    result = ' ' * pace
+    str = '"' + result + ''.join(char) + '"'
+    return str
+print(move('h j k l '))

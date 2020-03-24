@@ -1,0 +1,14 @@
+83.编写一个Python程序，在给定整数的一行中打印四个值十进制，八进制，十六进制（大写），二进制。转到编辑器
+样本输出：
+输入一个整数：25 
+十进制八进制十六进制（大写），二进制
+25 31 19 11001 
+
+i = int(input("Input an integer: "))
+o = str(oct(i))[2:]
+h = str(hex(i))[2:]
+h = h.upper()
+b = str(bin(i))[2:]
+d = str(i)
+print("Decimal10 Octal8 Hexadecimal16 (capitalized), Binary2")
+print(d,'  ',o,' ',h,'                   ',b)

@@ -1,0 +1,9 @@
+77.编写一个Python程序来计算给定字符串的非空子字符串的数量。
+
+def number_of_substrings(str): 
+    str_len = len(str); 
+    return int(str_len * (str_len + 1) / 2)
+
+strr = input('Enter a string:')
+print("Number of substrings:") 
+print(number_of_substrings(strr))

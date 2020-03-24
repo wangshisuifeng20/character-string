@@ -1,0 +1,13 @@
+82.编写一个Python程序，将给定的字符串包装到给定宽度的段落中。转到编辑器
+样本输出：
+Input a string: The quick brown fox
+Input the width of the paragraph: 10
+Result:
+The quick
+brown fox
+
+import textwrap
+s = input("Input a string: ")
+w = int(input("Input the width of the paragraph: ").strip())
+print("Result:")
+print(textwrap.fill(s,w))

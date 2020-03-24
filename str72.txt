@@ -1,0 +1,9 @@
+72.编写一个Python程序，从给定的字符串中删除所有连续的重复项。
+
+from itertools import groupby
+def chong(str):
+    list = []
+    for (key,group) in groupby(str):
+        list.append(key)
+    return ''.join(list)
+print(chong('xxxxxiiiii'))

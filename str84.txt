@@ -1,0 +1,13 @@
+84.编写一个Python程序来交换给定字符串的大小写。
+样本输出：
+pYTHON eXERCISES 
+jAVA 
+NumpY 
+
+
+def swapcase1(str):
+    str1 = str.swapcase()
+    return str1
+print(swapcase1('pYTHON eXERCISES'))
+print(swapcase1('jAVA '))
+print(swapcase1('NumpY '))

@@ -1,0 +1,19 @@
+73.编写一个Python程序来计算给定字符串中的大写，小写，特殊字符和数字值。
+
+def count1(str):
+    i = 0
+    j = 0
+    k = 0
+    L = 0
+    strings = '~!@#$%^&*()_+-*/<>,.[]\/'
+    for string in str:
+        if string.isdigit() == True:
+            k += 1
+        if string.isupper() == True:
+            j += 1
+        if string.islower() == True:
+            i += 1
+        if string in  strings:
+            L += 1
+    return i,j,k,L
+print(count1('hfsPU12*'))
