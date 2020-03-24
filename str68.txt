@@ -1,0 +1,13 @@
+68.编写一个Python程序，从给定的字符串创建两个字符串。使用仅出现一次的字符创建第一个字符串，
+并创建由所述字符串中多次出现的字符组成的第二个字符串。
+
+from collections import Counter
+def two(input):
+    strchar = Counter(input)
+    group1 = [key for(key,count) in strchar.items() if count == 1]
+    group2 = [key for(key,count) in strchar.items() if count > 1]
+    return group1,group2
+input = 'hsjkkkjj'
+s1,s2 = two(input)
+print(''.join(s1))
+print(''.join(s2))

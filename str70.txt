@@ -1,0 +1,12 @@
+70.编写一个Python程序，从两个给定的字符串中创建一个字符串，
+该字符串将所述字符串的不常见字符连接在一起。
+
+
+from collections import Counter
+def ooo(str1,str2):
+    d1 = Counter(str1)
+    d2 = Counter(str2)
+    char = d1 & d2
+    result = [ch for ch in str1 if ch not in char] + [ch for ch in str2 if ch not in char]
+    return ''.join(result)
+print(ooo('1264','154'))

@@ -1,0 +1,8 @@
+def count_number(str):
+    sum = 0
+    for x in str:
+        if x.isdigit() == True:
+            z = int(x)
+            sum = sum + z
+    return sum
+print(count_number('4dff5g'))

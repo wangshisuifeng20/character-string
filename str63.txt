@@ -1,0 +1,6 @@
+63.编写一个Python程序以从IP地址中删除前导零。
+
+def delete(str1):
+    b = ".".join([str(int(i)) for i in  str1.split('.')])
+    return b
+print(delete("255.024.01.01"))

@@ -1,0 +1,7 @@
+64.编写一个Python程序，以查找给定二进制字符串中连续0的最大长度。
+
+
+def max_consecutive_0(input_str): 
+     return  max(map(len,input_str.split('1')))
+str1 = '111000010000110'
+print(max_consecutive_0(str1))

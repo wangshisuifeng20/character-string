@@ -1,0 +1,10 @@
+67.编写一个Python程序，以删除给定字符串的所有连续重复项。
+
+
+from itertools import groupby
+def count(str):
+    list = []
+    for (key,group) in groupby(str):
+        list.append(key)
+    return ''.join(list)
+print(count('xxxxxyyyyy'))
